@@ -1,0 +1,82 @@
+/* Full‑screen drifting ocean background */
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+body::before {
+  content:""; position: fixed; top:0; left:0;
+  width:200%; height:200%;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80")
+              center/cover no-repeat;
+  animation: drift 30s linear infinite;
+  transform: translate(-50%,-50%) scale(1.2);
+  z-index: -1;
+}
+@keyframes drift {
+  0% { transform: translate(0,0) scale(1.2); }
+  50% { transform: translate(-25%,-10%) scale(1.2); }
+ 100% { transform: translate(0,0) scale(1.2); }
+}
+
+/* 3D container */
+.app-container { perspective: 1000px; }
+
+/* Glass‑morphic card + hover tilt */
+.speech-app {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+  transform-style: preserve-3d;
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+.speech-app:hover {
+  transform: rotateY(8deg) rotateX(4deg);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+.text-shadow {
+  font-family: 'Arvo', cursive;
+  color: #fff;
+  text-shadow: 3px 3px 12px rgba(0,0,0,0.7);
+}
+
+/* Visualizer */
+.visualizer {
+  display: flex; justify-content: center; gap:12px;
+  perspective:800px; transform: translateZ(30px);
+}
+.bar {
+  width:12px; height:40px;
+  background:#0ff; border-radius:6px;
+  box-shadow:0 0 15px #0ff;
+  transform: rotateX(45deg);
+  animation: bounce 1s infinite ease-in-out;
+}
+.bar:nth-child(2){animation-delay:.1s;}
+.bar:nth-child(3){animation-delay:.2s;}
+.bar:nth-child(4){animation-delay:.3s;}
+.bar:nth-child(5){animation-delay:.4s;}
+.visualizer.paused .bar {
+  animation-play-state: paused; opacity:0.3;
+}
+@keyframes bounce {
+  0%,100%{transform:scaleY(1) rotateX(45deg);}
+  50% {transform:scaleY(2.5) rotateX(45deg);}
+}
+
+/* Dark speech output area */
+.words {
+  transform: translateZ(20px);
+  max-width:100%; padding:1rem;
+  border-radius:12px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size:1.2rem; line-height:1.6rem;
+  text-align:left; box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  max-height:200px; overflow-y:auto;
+}
+.words p { margin:0; }
