@@ -49,4 +49,15 @@ The app currently supports the following languages:
 - 🇫🇷 **French** (`fr-FR`)
 - 🇩🇪 **German** (`de-DE`)
 - 🇯🇵 **Japanese** (`ja-JP`)
+## 📌 Customization Ideas
+
+- 🎨 **Add Theme Switch:** Implement light and dark mode toggle for better user experience.
+- 📲 **Convert to PWA:** Turn the app into a Progressive Web App for offline support and installability.
+- 💬 **Add Voice Commands:** Integrate basic voice-command functionality or chatbot interaction.
+- 🗂️ **Store Transcripts:** Save transcribed text to `localStorage` or connect to a backend/database for persistence.
+
+## 🎥 Demo Preview
+
+✨ **Elegant ocean motion background**  
+📝 **Live speech-to-text transcription in real-time**
 
