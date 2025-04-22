@@ -30,8 +30,6 @@
 - **BrowserSync** for local development testing
 
 📁 File Structure
-
-speech-detection-app/
 ├── index.html          # Main HTML structure
 ├── style.css           # Custom and Bootstrap-styled CSS
 ├── index.js            # JavaScript handling speech recognition
