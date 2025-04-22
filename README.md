@@ -30,10 +30,11 @@
 - **BrowserSync** for local development testing
 
 📁 File Structure
-<pre> ``` 📁 speech-detection-app/
+<pre> ``` 📁 speech-detection-/
   ├── 📄 index.html # Main HTML file
   ├── 📄 style.css # Styling with Bootstrap and custom effects 
-  ├── 📄 index.js # JavaScript for speech recognition ├── 📁 assets/ 
+  ├── 📄 index.js # JavaScript for speech recognition 
+  ├── 📁 assets/ 
   │ └── 🌅 background.mp4 # (Optional) motion background or images 
   ├── 📄 README.md # Project documentation 
   ├── 📄 LICENSE (optional) # Mit``` </pre>
