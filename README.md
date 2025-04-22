@@ -30,14 +30,7 @@
 - **BrowserSync** for local development testing
 
 📁 File Structure
-├── index.html          # Main HTML structure
-├── style.css           # Custom and Bootstrap-styled CSS
-├── index.js            # JavaScript handling speech recognition
-├── assets/             # Optional: Place for fonts, images, backgrounds
-│   ├── ocean-bg.mp4    # Optional animated background
-│   └── logo.png        # Optional logo
-├── README.md           # Project documentation
-└── LICENSE             # Optional: License info
+<pre> ``` 📁 speech-detection-app/ ├── 📄 index.html # Main HTML file ├── 📄 style.css # Styling with Bootstrap and custom effects ├── 📄 index.js # JavaScript for speech recognition ├── 📁 assets/ │ └── 🌅 background.mp4 # (Optional) motion background or images ├── 📄 README.md # Project documentation ├── 📄 LICENSE (optional) # Project license file ``` </pre>
 
 💡 To-Do
 Add language switcher dropdown
