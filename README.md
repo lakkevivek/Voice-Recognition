@@ -39,15 +39,14 @@
   ├── 📄 README.md # Project documentation 
   ├── 📄 LICENSE (optional) # Mit``` </pre>
 
-💡 To-Do
-Add language switcher dropdown
+## 🌐 Language Support
 
-Export transcribed text as PDF or text file
+The app currently supports the following languages:
 
-Dark/light mode toggle
-
-Integrate translation API (Google/Bing)
-
-📜 License
-This project is licensed under the MIT License.
+- 🇺🇸 **English** (`en-US`)
+- 🇮🇳 **Hindi** (`hi-IN`)
+- 🇮🇳 **Telugu** (`te-IN`)
+- 🇫🇷 **French** (`fr-FR`)
+- 🇩🇪 **German** (`de-DE`)
+- 🇯🇵 **Japanese** (`ja-JP`)
 
